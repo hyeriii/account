@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Web Server</title>
+    <meta charset="utf-8" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <h1>Web Server 생성 계정 확인</h1>
+
+    <form action="/check" method="get" target="hidden-form">
+
+        <tr>
+            <th>ID</th>
+            <td><input type="text" name="input_id_check"></td>
+        </tr>
+
+        <tr>
+            <th>PASSWORD</th>
+            <td><input type="password" name="input_pw_check"></td>
+        </tr>
+
+        <input type="submit" value="Submit">
+
+
+    </form><br>
+
+ 
+</body>
+</html>
+
+
+const char* PARAM_ID_CHECK = "input_id_check";
+const char* PARAM_PW_CHECK = "input_pw_check";
